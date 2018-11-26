@@ -34,6 +34,31 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
 
+
+  <!-- New animation Item -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/polygonizr.min.js"></script>
+  <style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    #site-landing {
+        position:relative;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+    h1 { position: absolute; color: #fff; top: 100px; left: 2em; z-index: 9999; }
+    .jquery-script-ads {position: absolute; color: #fff; top: 200px; left: 2em; z-index: 9999; }
+  </style>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -102,6 +127,42 @@
 
         <div class="col-lg-7">
           <div class="about-descr">
+
+            
+            <!-- start section animation Item -->
+            <div class="jquery-script-ads">
+              <script type="text/javascript"><!--
+              google_ad_client = "ca-pub-2783044520727903";
+              /* jQuery_demo */
+              google_ad_slot = "2780937993";
+              google_ad_width = 728;
+              google_ad_height = 90;
+              //-->
+              </script>
+
+              <script type="text/javascript"
+              src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+              </script>
+            </div>
+            <div id="site-landing"></div>
+            <script>
+            $('#site-landing').polygonizr();
+            </script>
+            <script type="text/javascript">
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-36251023-1']);
+              _gaq.push(['_setDomainName', 'jqueryscript.net']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+          </script>
+          <!-- end section animation Item -->
+
+
 
             <p class="p-heading">Energetic software engineer with more experience developing robust code for high volume businesses. & Team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus.  </p>
             <p class="separator">Has developed several web and standalone software applications, including a hospital management system project that created using Spring boot MVC framework with Maven.</p>
@@ -367,7 +428,7 @@
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
-  <!-- Template Main Javascript File -->
+  <!-- Main Javascript File -->
   <script src="js/main.js"></script>
 
 </body>
